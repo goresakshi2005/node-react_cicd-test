@@ -1,6 +1,4 @@
 const express = require('express');
-const helmet = require('helmet');  // not installed
-const app = express();
 
 app.use(helmet());
 
