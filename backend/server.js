@@ -1,8 +1,8 @@
 const express = require('express');
-const cors = require('cors');   // <-- this package is not in package.json
+const helmet = require('helmet');  // not installed
 const app = express();
 
-app.use(cors());
+app.use(helmet());
 
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello from backend' });
